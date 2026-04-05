@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Control System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📦 Inventory Control System</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Add Product</h2>
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="qty" placeholder="Quantity">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="addProduct()">Add</button>
+    </div>
+
+    <div class="card">
+        <h2>Search</h2>
+        <input type="text" id="search" placeholder="Search..." onkeyup="searchProduct()">
+    </div>
+
+    <div class="card">
+        <h2>Product List</h2>
+        <ul id="list"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
